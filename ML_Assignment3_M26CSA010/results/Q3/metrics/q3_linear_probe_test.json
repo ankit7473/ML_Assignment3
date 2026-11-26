@@ -1,0 +1,22 @@
+{
+  "linear_probe_results": [
+    {
+      "representation": "raw_pixels",
+      "test_accuracy": 0.303
+    },
+    {
+      "representation": "clean_ae_encoded",
+      "test_accuracy": 0.5234
+    },
+    {
+      "representation": "denoising_ae_encoded",
+      "test_accuracy": 0.5573
+    },
+    {
+      "representation": "clean_ae_encoded_with_corrupted_test_input",
+      "test_accuracy": 0.2635
+    }
+  ],
+  "selected_bottleneck": 256,
+  "training_feature_subset_size": 5000
+}

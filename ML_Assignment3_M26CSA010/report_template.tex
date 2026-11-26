@@ -1,0 +1,44 @@
+% CVPR-style compact report starter; insert the official CVPR template if required by instructor.
+\documentclass[10pt,twocolumn]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{graphicx,amsmath,booktabs}
+\title{MLPs, CNNs, Autoencoders, SVMs and Clustering on CIFAR-10}
+\author{Ankit Kumar\\Roll No. M26CSA010}
+\date{}
+\begin{document}\maketitle
+\begin{abstract}
+TODO: Summarize question objectives, setup, the most important measured results and conclusions. Do not include unrun experiments.
+\end{abstract}
+\section{Common Experimental Setup}
+CIFAR-10 is split stratified into 45,000 training and 5,000 validation images using random seed 26010 (numeric characters from roll number M26CSA010). The official test set is reserved for final reporting. No pretrained networks or external data are used. TODO: hardware, epochs, runtime, and exact preprocessing.
+\section{Q1: MLP Capacity and Memorization}
+\subsection{Fair Comparison and Hypothesis}
+TODO: Describe the chosen reason (e.g., flattening discards explicit spatial inductive bias) and competing explanation; define fairness criterion before results.
+\subsection{Results}
+TODO: Insert parameter-count table and train/validation curves. Include noisy-label memorization trajectory table/plot.
+\subsection{Discussion}
+TODO: Use measured trajectory to discuss structure learning versus memorization.
+\section{Q2: CNN Versus MLP}
+\subsection{Clean Comparison}
+TODO: Explain fixed fairness budget (same split, augmentation, batch, optimizer and epochs), parameter counts, and caveat.
+\subsection{Spatial Structure Disruption}
+TODO: Describe the fixed permutation and pre-registered expectation, then results.
+\subsection{Occlusion, Errors and Confidence}
+TODO: Compare center occlusion accuracy/confidence and inspect examples; connect three conditions.
+\section{Q3: Autoencoders}
+\subsection{Bottleneck Capacity Selection}
+TODO: Present validation MSE across capacities and selected model.
+\subsection{Clean and Denoising Training}
+TODO: State corruption (Gaussian noise sigma 0.20), input/target pair and protocol.
+\subsection{Reconstruction and Class Information}
+TODO: Include test reconstruction MSE/PSNR, classification accuracy/confidence across input/reconstruction conditions, and raw versus latent linear-probe table. Conclude whether denoising reconstructs features useful for classification.
+\section{Q4: SVM and Clustering (Bonus)}
+\subsection{Kernel and $C$ Sweep}
+TODO: Describe representation, fixed subset, sweep, validation selection; plot validation accuracy and SV fraction vs $C$ for all kernels; report final test accuracy only after selection.
+\subsection{Boundary and Errors}
+TODO: Examine support vectors and near-boundary test examples, connect to error types and confusion matrix.
+\subsection{Unsupervised Clustering}
+TODO: Describe PCA and KMeans fitted without labels; cluster-to-class mapping learned on training subset; compare test clustering with SVM, contingency and disagreement analysis.
+\section{Limitations and Conclusion}
+TODO: Discuss CPU cost, subset limitations, statistical uncertainty and what the evidence supports.
+\end{document}

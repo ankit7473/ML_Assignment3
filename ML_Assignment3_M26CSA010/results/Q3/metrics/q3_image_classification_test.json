@@ -1,0 +1,22 @@
+{
+  "clean": {
+    "accuracy": 0.579,
+    "mean_confidence": 0.6181571760311723
+  },
+  "corrupted": {
+    "accuracy": 0.2161,
+    "mean_confidence": 0.8482281916469335
+  },
+  "clean_ae_reconstruction": {
+    "accuracy": 0.539,
+    "mean_confidence": 0.5550158313944936
+  },
+  "denoising_ae_reconstruction": {
+    "accuracy": 0.4671,
+    "mean_confidence": 0.5408130403965712
+  },
+  "corrupted_reconstructed_by_clean_ae": {
+    "accuracy": 0.4195,
+    "mean_confidence": 0.6017807820215821
+  }
+}

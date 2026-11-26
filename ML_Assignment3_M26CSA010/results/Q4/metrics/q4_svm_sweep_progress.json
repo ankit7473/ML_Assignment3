@@ -1,0 +1,92 @@
+{
+  "config": {
+    "subset": 2000,
+    "pca_dims": 32,
+    "test_samples": 10000,
+    "seed": 26010,
+    "kernels": [
+      "linear",
+      "rbf",
+      "poly"
+    ],
+    "C_values": [
+      0.1,
+      1,
+      10
+    ]
+  },
+  "sweep": [
+    {
+      "kernel": "linear",
+      "C": 0.1,
+      "validation_accuracy": 0.3324,
+      "support_vector_fraction": 0.9245,
+      "train_accuracy": 0.433,
+      "fit_seconds": 11.812408208847046
+    },
+    {
+      "kernel": "linear",
+      "C": 1,
+      "validation_accuracy": 0.3328,
+      "support_vector_fraction": 0.9245,
+      "train_accuracy": 0.433,
+      "fit_seconds": 120.74151945114136
+    },
+    {
+      "kernel": "linear",
+      "C": 10,
+      "validation_accuracy": 0.3322,
+      "support_vector_fraction": 0.9265,
+      "train_accuracy": 0.431,
+      "fit_seconds": 713.1580278873444
+    },
+    {
+      "kernel": "rbf",
+      "C": 0.1,
+      "validation_accuracy": 0.323,
+      "support_vector_fraction": 0.997,
+      "train_accuracy": 0.3755,
+      "fit_seconds": 1.7125263214111328
+    },
+    {
+      "kernel": "rbf",
+      "C": 1,
+      "validation_accuracy": 0.3784,
+      "support_vector_fraction": 0.972,
+      "train_accuracy": 0.6125,
+      "fit_seconds": 1.6430416107177734
+    },
+    {
+      "kernel": "rbf",
+      "C": 10,
+      "validation_accuracy": 0.376,
+      "support_vector_fraction": 0.9585,
+      "train_accuracy": 0.953,
+      "fit_seconds": 1.7718186378479004
+    },
+    {
+      "kernel": "poly",
+      "C": 0.1,
+      "validation_accuracy": 0.2352,
+      "support_vector_fraction": 0.9895,
+      "train_accuracy": 0.3335,
+      "fit_seconds": 0.6241683959960938
+    },
+    {
+      "kernel": "poly",
+      "C": 1,
+      "validation_accuracy": 0.2966,
+      "support_vector_fraction": 0.962,
+      "train_accuracy": 0.592,
+      "fit_seconds": 0.6334981918334961
+    },
+    {
+      "kernel": "poly",
+      "C": 10,
+      "validation_accuracy": 0.3118,
+      "support_vector_fraction": 0.9375,
+      "train_accuracy": 0.877,
+      "fit_seconds": 0.7718620300292969
+    }
+  ]
+}
